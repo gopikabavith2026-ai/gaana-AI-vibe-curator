@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gaana AI Vibe Curator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="vibe-root">
+
+    <p class="vc-eyebrow">
+        GAANA • AI DISCOVERY
+    </p>
+
+    <h1 class="vc-title">
+        Vibe<span>Chapters</span>
+    </h1>
+
+    <p class="vc-sub">
+
+        Describe a mood, memory, journey or feeling in English, Hindi or Hinglish.
+        Our AI curator discovers hidden independent artists perfectly matching your vibe.
+
+    </p>
+
+    <div class="vc-input-shell">
+
+        <div class="vc-input-row">
+
+            <textarea
+                id="vc-input"
+                placeholder="e.g. Baarish mein long drive..."
+            ></textarea>
+
+            <button id="vc-go">
+
+                Curate My Vibe
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="vc-chips">
+
+        <button class="vc-chip">
+            driving in rain
+        </button>
+
+        <button class="vc-chip">
+            2am thoughts
+        </button>
+
+        <button class="vc-chip">
+            chai & monsoon
+        </button>
+
+        <button class="vc-chip">
+            gym motivation
+        </button>
+
+        <button class="vc-chip">
+            wedding vibes
+        </button>
+
+    </div>
+
+    <div id="loading" class="hidden">
+
+        <div class="loader"></div>
+
+        <p>
+
+            Reading your vibe...
+
+        </p>
+
+    </div>
+
+    <div id="results"></div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
